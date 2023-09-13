@@ -1,0 +1,72 @@
+.hidden {
+    display: none;
+  }
+
+  body{
+    text-align: center;
+    background-color: rgb(204,204,255);
+  }
+
+  /* Register button */
+input[type="submit"] {
+    background-color: #FF4081; /* Set the background color */
+    color: #FFFFFF; /* Set the text color */
+    border: none; /* Remove the border */
+    padding: 10px 20px; /* Add some padding */
+    font-size: 16px; /* Set the font size */
+    cursor: pointer; /* Add a cursor pointer on hover */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 64, 129, 0); /* Add initial glow effect */
+  transition: box-shadow 0.3s; /* Add transition effect */
+
+  }
+  
+  /* Clear button */
+  input[type="reset"] {
+    background-color: #3F51B5; /* Set the background color */
+    color: #FFFFFF; /* Set the text color */
+    border: none; /* Remove the border */
+    padding: 10px 20px; /* Add some padding */
+    font-size: 16px; /* Set the font size */
+    cursor: pointer; /* Add a cursor pointer on hover */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(63, 81, 181, 0); /* Add initial glow effect */
+  transition: box-shadow 0.3s; /* Add transition effect */
+  }
+  
+  /* Hover effect */
+  input[type="submit"]:hover,
+  input[type="reset"]:hover {
+    opacity: 0.8; /* Reduce the opacity on hover */
+    box-shadow: 0 0 20px rgba(255, 64, 129, 0.8); /* Update the glow effect on hover */
+
+  }
+
+  input[type="text"],
+input[type="password"],
+input[type="email"],
+select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+select:focus {
+  border-color: #ffaa00;
+  box-shadow: 0 0 5px #ffaa00;
+}
+
+label {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+  .error{
+    color: red;
+  }

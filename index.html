@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Registration Form</title>
+  
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+</head>
+
+<body>
+  <h1>Welcome to Shailesh Sir Coding Classes</h1>
+  <h2>Grooming the Scholar who dare to dream...</h2>
+
+  <form action="index2.html" name="AdmissionForm" onsubmit="return validateForm()" method="get">
+    <div class="row">
+      
+        <label for="fname">First Name:</label>
+      </div>
+      
+        <input type="text" id="fname" name="fname" placeholder="Your first name">
+        <span class="error" id="fnameError"></span>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      
+        <label for="mname">Middle Name:</label>
+      </div>
+      
+        <input type="text" id="mname" name="mname" placeholder="Your middle name">
+        <span class="error" id="mnameError"></span>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      
+        <label for="lname">Last Name:</label>
+      </div>
+      
+        <input type="text" id="lname" name="lname" placeholder="Your last name">
+        <span class="error" id="lnameError"></span>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      
+        <label for="mobile">Mobile Number:</label>
+      </div>
+      
+        <input type="text" id="mobile" name="mobile" placeholder="Your mobile number">
+        <span class="error" id="mobileError"></span>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      
+        <label for="email">Email Address:</label>
+      </div>
+      
+        <input type="text" id="email" name="email" placeholder="Your email address">
+        <span class="error" id="emailError"></span>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+        
+          <label for="password">Password:</label>
+        </div>
+        
+
+          <input type="password" id="password" name="password" placeholder="Password">
+          <button type="button" id="togglePassword"><i id="eyeIcon" class="fa fa-eye" style="font-size:36px"></i></button>
+          <span class="error" id="passwordError"></span>
+        </div>
+      </div>
+      <br>
+  
+
+<div class="row">
+  <label for="confirmPassword">Confirm Password:</label>
+</div>
+<input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password">
+<span class="error" id="confirmPasswordError"></span>
+</div>
+<br>
+
+
+    <div class="row">
+      
+        <label for="age">Age:</label>
+      </div>
+      
+        <input type="text" id="age" name="age" placeholder="Your age">
+        <span class="error" id="ageError"></span>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      
+        <label for="gender">Gender:</label>
+      </div>
+      
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="Other">
+        <label for="other">Other</label>
+        <span class="error" id="genderError"></span>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+        
+          <label for="languageSelect">Languages:</label>
+        </div>
+        
+          <select id="languageSelect" name="languageSelect" onchange="">
+            <option value="">Select Language</option>
+            <option value="HTML">HTML/CSS</option>
+            <option value="Java">Java</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="SQL">SQL</option>
+          </select>
+          <span class="error" id="languageError"></span>
+        </div>
+      </div>
+      <br>
+    <div class="row">
+      
+        <label for="modeSelect">Mode of Participation:</label>
+      </div>
+      
+        <select id="modeSelect" name="modeSelect" onchange="showValues()">
+          <option value="">Select a Mode</option>
+          <option value="Online">Online</option>
+          <option value="Offline">Offline</option>
+        </select>
+        <span class="error" id="modeError"></span>
+      </div>
+    </div>
+    <br>
+    <div class="row hidden" id="placesRow">
+      
+        <label for="placesSelect">Places:</label>
+      
+      
+        <select id="placesSelect" name="placesSelect">
+          <option value="">Select a Place</option>
+          <option value="Borivali">Borivali</option>
+          <option value="Kandivali">Kandivali</option>
+          <option value="Dadar">Dadar</option>
+        </select>
+        <span class="error" id="placesError"></span>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <input type="checkbox" id="agree" name="agree">
+      <label for="agree">I agree to the terms and conditions</label>
+      <span class="error" id="agreeError"></span>
+    </div> <br>
+    <div class="row">
+      <input type="submit" value="Register">
+      <input type="reset" value="Clear" onclick="clearForm()">
+    </div>
+  </form>
+  
+
+  <script src="app.js"></script>
+</body>
+
+</html>
